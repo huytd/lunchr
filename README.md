@@ -1,12 +1,14 @@
 # Lunchr
 
-Lunchr is a command-line tool that helps you manage your local development environment easily.
+`lunchr` is a command-line tool that helps you manage your local development environment easily.
+
+<img width="513" alt="image" src="https://github.com/user-attachments/assets/83f8860a-4e7d-4681-a6c0-bb02970b8dc0" />
 
 ## What is it, exactly?
 
-Well, if you're like me, you probably have a lot of services you need to run, all at once. Before **lunchr**, I used to manually start each service one by one, which was time-consuming. Legend has it that I once forgot how to run all the local servers to do my work after an OS update.
+Well, if you're like me, you probably have a lot of services you need to run, all at once. Before `lunchr`, I used to manually start each service one by one, which was time-consuming. Legend has it that I once forgot how to run all the local servers to do my work after an OS update.
 
-Lunchr simplifies this process by providing a single command to start all the necessary services at once.
+`lunchr` simplifies this process by providing a single command to start all the necessary services at once.
 
 All you have to do is create a `.lunchr.toml` file and put it in your `$HOME` directory.
 
@@ -45,7 +47,7 @@ Refer to the `lunchr.example.toml` file as a template for your configuration fil
 
 ## Usage
 
-Start **Lunchr** with the following command:
+Start `lunchr` with the following command:
 
 ```bash
 $ lunchr
@@ -53,4 +55,4 @@ $ lunchr
 
 Press the number keys on your keyboard to toggle the services on or off.
 
-You can safely exit **Lunchr** by pressing `q` and open it again anytime you want.
+You can safely exit `lunchr` by pressing `q` and open it again anytime you want.
