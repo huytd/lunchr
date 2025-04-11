@@ -1,0 +1,27 @@
+[[commands]]
+name = "example python server"
+cwd = "/Users/me/code"
+start_command = "python http_server.py"
+kill_command = ""
+health_check_pattern = "python.*http_server\\.py"
+
+[[commands]]
+name = "example docker compose setup"
+cwd = "/Users/me/code/localstack"
+start_command = "docker-compose up"
+kill_command = "docker-compose down"
+health_check_pattern = "docker.*localstack"
+
+[[commands]]
+name = "keep me awake"
+cwd = "/Users/me/code/"
+start_command = "caffeinate -d"
+kill_command = ""
+health_check_pattern = "caffeinate"
+
+[[commands]]
+name = "open-webui (port 3333)"
+cwd = "/Users/me/code"
+start_command = "docker run -d -p 3333:8080 --add-host=host.docker.internal:host-gateway -v open-webui:/app/backend/data --name open-webui --restart always ghcr.io/open-webui/open-webui:main"
+kill_command = "docker stop open-webui"
+health_check_pattern = "docker.*open-webui"
